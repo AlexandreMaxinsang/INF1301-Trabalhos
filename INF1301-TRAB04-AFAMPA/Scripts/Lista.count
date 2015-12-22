@@ -1,0 +1,32 @@
+////////////////////////////////////////////////
+//
+// Exemplo de arquivo de declaração de contadores
+// Conta módulo Lista marcado
+//
+///////////////////////////////////////////////
+    
+    LIS_TpListaSemValor
+    LIS_TpListaComValor
+    LIS_TpEspacoDadoCabecaERRO
+    LIS_TpEspacoDadoCabecaOK
+    LIS_NoOrigemApontaCabecaERRO
+    LIS_NoOrigemApontaCabecaOK
+    LIS_CorrenteNULLERRO
+    LIS_CorrenteNULLOK
+    LIS_CorrenteCabecaERRO
+    LIS_CorrenteCabecaOK
+    LIS_ListaNVaziaCorrenteNULLERRO
+    LIS_ListaNVaziaCorrenteNULLOK
+    LIS_TpEspacoDadosListaERRO
+    LIS_TpEspacoDadosListaOK
+    LIS_NoAntouSucERRO
+    LIS_NoAntouSucOK
+    LIS_NoNOrigemERRO
+    LIS_NoNOrigemOK
+    LIS_NoNFimERRO
+    LIS_NoNFimOK
+    LIS_NoPCabecaERRO
+    LIS_NoPCabecaOK
+    LIS_TamanhoErradoNo
+    LIS_TamanhoCertoNo
+  

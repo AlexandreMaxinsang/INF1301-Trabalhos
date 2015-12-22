@@ -1,0 +1,10 @@
+Data		Horas Trabalhadas		Tipo Tarefa			Descrição da Tarefa Realizada
+
+16/10/2015		 3h		    Codificar Módulo		        Criar o esqueleto dos modulos finais do Gamão.
+17/10/2015		 2h		    Codificar Módulo			Rever e terminar o codigo dos modulos.
+17/10/2015		 2h		 Revisar Codigo do Módulo		Encontrar e corrigir erros de implementação dos modulos
+21/10/2015		 2h	    	 Revisar Codigo do Módulo		Corrigir erros de implementação dos modulos
+22/10/2015		 2h	    	 Redigir Script de Teste		Desenvolver testes para as funções de interface
+24/10/2015		 1h	       	 Revisar Script de Teste		Correção dos testes e modificação dos testes
+25/10/2015		 2h	    	   Realizar os Testes			Desenvolver testes para as funções de interface
+26/10/2015		2.5h  Diagnosticar e Corrigir os Problemas Encontrados	Correção de problemas na interface

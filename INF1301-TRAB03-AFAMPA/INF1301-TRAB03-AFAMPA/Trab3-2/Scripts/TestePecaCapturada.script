@@ -1,0 +1,40 @@
+// Script:    TestePecaCapturada.script
+// Autores:   Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+// Data:      16/out/2015
+// Propósito: Ilustrar arquivo de script, 
+//            Testa a construção de uma lista duplamente encadeada de peça capturadas do gamão,
+//	      a inserção de uma peça na lista , a retirada de uma peça dessa lista e o retorno da quantidade de elementos da lista
+//            Não verifica se as operações modificaram corretamente as referências
+//            Este script é completo!!!
+//
+
+
+==Criar lista de peça capturada
+=criarpecacap 0 0
+=destruirpecacap 0 0
+
+==Inserir uma peça em uma lista 
+=criarpecacap 0 1
+=inserirpecacap 0 1 'b'
+=destruirpecacap 0 1
+
+==Retirar uma peça em uma lista com peças
+=criarpecacap 0 2
+=inserirpecacap 0 2 'b'
+=retirarpecacap 0 2
+=destruirpecacap 0 2
+
+==Retirar uma peça em uma lista sem peças
+=criarpecacap 0 3
+=retirarpecacap 1 3
+=destruirpecacap 0 3
+
+==A quantiadade de elementos de uma lista
+=criarpecacap 0 1
+=inserirpecacap 0 1 'b'
+=inserirpecacap 0 1 'b'
+=inserirpecacap 0 1 'b'
+=qtdpecacap 0 1 3
+=destruirpecacap 0 1
+
+// fim

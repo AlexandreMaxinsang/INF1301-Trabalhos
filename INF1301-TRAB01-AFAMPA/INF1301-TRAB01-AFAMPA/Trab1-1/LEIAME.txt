@@ -1,0 +1,147 @@
+------------------------------------------------------------------------------------------------
+  Arquivo LEIAME do Grupo AFAMPA - Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+------------------------------------------------------------------------------------------------
+
+Este documento fornece informações de utilização para o programa de teste do módulo Lista.
+
+--------
+SUMÁRIO
+--------
+
+OBJETIVO
+INSTALAÇÃO
+ESTRUTURA DE DIRETÓRIOS
+MODO DE EXECUÇÃO
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+COMO OBTER AJUDA
+
+--------
+OBJETIVO
+--------
+
+O programa desenvolvido é parte integrante do trabalho 1 da matéria INF1301 - Programação Modular.
+O objetivo dos construtos aqui referenciados é implementar e testar um conjunto de funções que manipulam listas.
+
+No executável "TRAB1-1.exe" presente no arquivo compactado do trabalho, é apresentado o construto de teste da matriz de listas.
+Este realiza operações  básicas (como criar, destruir, inserir elemento, andar pela lista e etc). Neste programa há um módulo de teste 
+específico que estabelece uma interface com o módulo a testar. Com a finalidade de automatizar os testes, estes são 
+realizados através de arquivos de diretivas  de teste (script) e os módulos operam juntamente com um Arcabouço de Teste. 
+O Arcabouço, por sua vez, coordena a realização desses testes dentro  do programa, interpretando esse arquivo 
+de diretivas de teste.
+
+
+----------
+INSTALAÇÃO
+----------
+Crie um diretório no qual você deseja instalar a aplicação. Descompacte o arquivo neste diretório de sua escolha, 
+assegurando que sejam gerados os sub-diretórios contidos neste arquivo, descritos logo em seguida.
+
+-----------------------
+ESTRUTURA DE DIRETÓRIOS
+-----------------------
+
+Ao descompactar são criados os seguintes diretórios:
+
+-INF1301-TRAB01-AFAMPA: Pasta Raiz
+
+-BATCHES: Contém os arquivos .bat para execução dos testes dos módulos.
+
+-FONTES: Este diretório contém os arquivos fonte para compilação independente dos módulos Matriz e TESTMAT.
+
+-PRODUTO: Contém os arquivos excutáveis gerados. 
+
+-SCRIPTS: Contém os scripts de testes dos módulos.
+
+-----------------
+MODO DE EXECUÇÃO
+-----------------
+Para testar o programa, deve-se ir na pasta Batches, renomear o arquivo Instalar.bat.txt para Instalar.bat, e executar o arquivo. 
+Será requisitado um arquivo script para utilizar no teste.
+A sintaxe do arquivo pode ser com ou sem extensão (ex. TesteLista.script ou apenas TesteLista). 
+Para que o batch reconheça o arquivo, ele deve encontrar-se na pasta Scripts.
+Os arquivos script estão descritos abaixo.
+
+------------------------------------------
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+------------------------------------------
+
+- TesteLista.script: Arquivo que testa o módulo Lista.
+
+-----------------------------------------------------
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+-----------------------------------------------------
+Legenda:
+=nome do comando <tipo de dado a ser recebido> descricao do dado
+Descrição do caso de teste
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo Árvore com o programa "TRAB1-1.exe", 
+o construto de teste da matriz.
+Comandos disponpíveis e respectiva descrição:
+
+	
+	=criarlista <int> Índice da lista.
+	Cria uma lista. Testa a função LIS_CriarLista.
+
+	=destruir <int> Índice da lista.
+	Destrói a lista. Testa a função LIS_DestruirLista.
+
+	=esvaziarlista <int> Índice da lista.
+	Apaga todos os elementos da lista. Testa a função LIS_EsvaziarLista.
+
+	=inselemantes <int> índice da lista
+ 		      <char> valor a ser inserido na lista
+		      <int> Condição de retorno esperada
+	Insere um elemento antes do corrente da lista, caso a lista esteja vazia, insere no primeiro elemento. Testa a função de acesso         	LIS_InserirElementoAntes.
+
+	=inselemapos <int> índice da lista.
+		     <char> valor a ser inserido na lista.
+  		     <int> Condição de retorno esperada.
+	Insere um elemento apos do corrente da lista. Testa a função de acesso LIS_InserirElementoApos.
+
+	=obtervalorelem <int> índice da lista.
+		        <char> valor esperado.
+			<int> Condição de retorno esperada.
+	Obtém o valor do corrente da lista. Testa a função LIS_ObterValor.
+
+	=excluirelem <int> Índice da lista.
+		     <int> Condição de retorno esperada.
+	Exclui o elemento do corrente da lista. Testa a função LIS_ExcluirElemento.
+
+	=irinicio <int> Índice da lista.
+	Vai para o elemento inicial da lista. Testa a função IrInicioLista.
+
+	=irfinal <int> Índice da lista.
+	Vai para o elemento final da lista. Testa a função IrFinalLista.
+
+	=avancarelem <int> Índice da lista.
+		     <int> Quantidade de elementos que se deseja avançar.
+		     <int> Condição de retorno esperada.
+	Avança nos elementos da lista. Testa a função LIS_AvancarElementoCorrente.
+	
+	Obs. Os valores numéricos esperados/obtidos das condições de retorno estão descritos logo abaixo.
+
+	==> Valores numéricos das condições de retorno esperadas
+
+	* LIS_CondRetOK = 0
+	Concluiu corretamente
+
+        * LIS_CondRetListaVazia = 1
+	A lista não contém elementos
+
+        * LIS_CondRetFimLista = 2
+	Foi atingido o fim de lista
+
+        * LIS_CondRetNaoAchou = 3
+	Não encontrou o valor procurado
+
+        * LIS_CondRetFaltouMemoria = 4
+	Faltou memória ao tentar criar um elemento de lista
+
+
+-----------------
+COMO OBTER AJUDA
+-----------------
+
+Se tiver qualquer problema com este produto, entre em contato por meio dos 
+emails: alessandrofaletti@gmail.com, maa4447@gmail.com, pedrobruno81@yahoo.com.br

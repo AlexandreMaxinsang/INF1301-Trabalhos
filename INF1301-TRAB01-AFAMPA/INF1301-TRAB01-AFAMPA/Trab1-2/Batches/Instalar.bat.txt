@@ -1,0 +1,9 @@
+@echo off
+
+
+IF EXIST ..\produto\Trab1-2.exe.txt	ren ..\produto\Trab1-2.exe.txt Trab1-2.exe
+
+set /p Var1="Qual script deseja usar: "
+
+..\produto\Trab1-2  /s..\scripts\%Var1%    /l..\produto\Log.log
+pause

@@ -1,0 +1,335 @@
+
+// Script:    Lista.script
+// Autor:     Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+// Data:      19/novembro/2015
+// Propósito: Testar as funcoes do modulo de administracao da Lista Duplamente Encadeada
+//
+
+== Iniciar contagem
+=inicializarcontadores  ""
+=lercontadores          "..\\Scripts\\Lista"
+=iniciarcontagem
+=resetteste
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar desencadeia  nó sem liberá-lo com free
+=deturpar 0 8
+
+== Verifica Lista Incorreta
+=verificarlista 0 0  //nao tem como verificar o erro estrutura
+
+==Destruir a lista
+=destruirlista 0
+
+== Terminar controlar contadores
+=pararcontagem
+
+== Registrar acumulador
+=registraracumulador   "acumulador"
+
+== Terminar contagem
+=terminarcontadores
+=verificarmemoria           // 2 espaços ainda estao na memoria
+=obternumeroespacosalocados  2 
+
+
+=inicializarcontadores  ""
+=lercontadores          "..\\Scripts\\Lista"
+=iniciarcontagem
+
+
+== Criar Lista
+=criarlista 0
+
+== Verifica Lista Correta
+=verificarlista 0 0
+
+== Insere Elementos na Lista
+=inselemapos 0 "abc" 0
+=inselemapos 0 "cba" 0
+=inselemapos 0 "aaa" 0
+
+== Verifica Lista Correta
+=verificarlista 0 0
+
+== Deturpar Eliminar Elemento Corrente
+=deturpar 0 1
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar Elemento Anterior recebe NULL
+=deturpar 0 3
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar tipo apontado pelo no
+=deturpar 0 7
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Deturpar Anula ponteiro cabeca
+=deturpar 0 11
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Corrente para a penúltima posição
+=irinicio 0
+=avancarelem 0 1 0
+
+== Deturpar Elemento Corrente Prox=NULL
+=deturpar 0 2
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar Eliminar Elemento Corrente
+=deturpar 0 10
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Destroi lista sobrando um elemento deturpado
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar Anterior = NULL
+=deturpar 0 3
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Aponta para o inicio
+=irinicio 0
+
+== Deturpar ponteiro para cabeça
+=deturpar 0 11
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar ponteiro para cabeça
+=deturpar 0 11
+
+== Aponta para o inicio
+=irinicio 0
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+
+
+== Destroi lista 
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar PCabeca tipo alterado
+=deturpar 0 13
+
+== Aponta para o inicio
+=irinicio 0
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar atribuir NULL ao ponteiro corrente
+=deturpar 0 9
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+=AceitaFalhasAcumuladas 1
+
+== Destroi lista
+=destruirlista 0
+
+
+
+== Criar Lista
+=criarlista 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+=inselemapos 0 "abc" 0
+
+== Deturpar atribuir NULL ao valor do nó corrente
+=deturpar 0 6
+
+== Verifica Lista Incorreta
+=verificarlista 0 5
+
+== Destroi lista
+=destruirlista 0
+
+
+== Criar Lista
+=criarlista 1
+=inselemapos 1 "abc" 0
+=inselemapos 1 "abc" 0
+=inselemapos 1 "abc" 0
+
+
+== Deturpar apontar o nó proximo para lixo
+=deturpar 1 4
+
+== Verifica Lista Incorreta
+=verificarlista 1 5 		//nao tem como destruir a lista pois a estrutura aponta para um lixo
+=AceitaFalhasAcumuladas 1
+
+== Criar Lista
+=criarlista 2
+=inselemapos 2 "abc" 0
+=inselemapos 2 "abc" 0
+=inselemapos 2 "abc" 0
+
+
+== Deturpar apontar o nó anterior para lixo
+=deturpar 2 5
+
+== Verifica Lista Incorreta
+=verificarlista 2 5 		//nao tem como destruir a lista pois a estrutura aponta para um lixo
+=AceitaFalhasAcumuladas 1
+
+
+== Criar Lista
+=criarlista 3
+=inselemapos 3 "abc" 0
+=inselemapos 3 "abc" 0
+=inselemapos 3 "abc" 0
+
+
+== Deturpar desencadeia  nó sem liberá-lo com free
+=deturpar 3 12
+
+== Verifica Lista Incorreta
+=verificarlista 3 5
+=AceitaFalhasAcumuladas 1
+
+==Destruir a lista
+=destruirlista 3
+
+== Criar Lista
+=criarlista 4
+=inselemapos 4 "abc" 0
+=inselemapos 4 "abc" 0
+=inselemapos 4 "abc" 0
+
+== Deturpar Tamanho armazenado pelo nó
+=deturpar 4 14
+
+== Verifica Lista Incorreta
+=verificarlista 4 5
+
+== Destruir Lista
+=destruirlista 4
+
+
+
+
+
+== Terminar controlar contadores
+=pararcontagem
+=verificarcontagens    0
+
+== Registrar acumulador
+=registraracumulador   "acumulador"
+== Terminar contagem
+=terminarcontadores

@@ -1,0 +1,7 @@
+@echo off
+
+
+IF EXIST ..\produto\Trab2-3.exe.txt	ren ..\produto\Trab2-3.exe.txt Trab2-3.exe
+
+..\Produto\Trab2-3  /s..\Scripts\TesteDadoPontos.script   /l..\produto\LogDadoPontos.log
+pause

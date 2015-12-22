@@ -1,0 +1,7 @@
+@echo off
+
+
+IF EXIST ..\produto\TRAB3-2.exe.txt	ren ..\produto\TRAB3-2.exe.txt TRAB3-2.exe
+
+..\Produto\TRAB3-2  /s..\Scripts\TestePecaCapturada.script   /l..\produto\LogTestePecaCapturada.log
+pause

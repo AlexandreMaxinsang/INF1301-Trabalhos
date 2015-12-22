@@ -1,0 +1,17 @@
+Data		Horas Trabalhadas		Tipo Tarefa			                    Descrição da Tarefa Realizada
+
+16/08/2015		 1h		   	  Estudar	          	              Obtenção e Instalação do arcabouço de testes
+
+22/08/2015		1.5h		    Especificar funções		                   Definir quais funções foram requeridas pelo cliente
+
+23/08/2015		 5h		     Codificar Módulo		                  Inicio da implementação das funções do modulo matriz
+
+28/08/2015		 5h		  Revisar Código do Módulo	              Termino da implementação e revisão do codigo do modulo matriz
+
+29/08/2015		 1h	    	  Redigir script de Teste   	  		          Codificação do script de Teste
+
+29/08/2015		 1h	    	     Realizar Testes                       Realização de diversos testes e correção do codigo nas funções indicadas
+
+30/08/2015		 1h		     Revisar Codigo		             Feito o cleanup do codigo para remoção de instancias redundantes
+
+30/08/2015		0.5h     Diagnosticar e Corrigir os Problemas Encontrados  Realização de alguns testes, revisão geral e preparação para envio ao cliente

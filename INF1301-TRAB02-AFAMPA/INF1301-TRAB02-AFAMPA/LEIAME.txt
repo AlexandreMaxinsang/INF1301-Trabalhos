@@ -1,0 +1,220 @@
+------------------------------------------------------------------------------------------------
+  Arquivo LEIAME do Grupo AFAMPA - Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+------------------------------------------------------------------------------------------------
+
+Este documento fornece informações de utilização para os programas de implementação do jogo Paciencia Spider
+
+--------
+SUMÁRIO
+--------
+
+OBJETIVO
+INSTALAÇÃO
+ESTRUTURA DE DIRETÓRIOS
+MODO DE EXECUÇÃO
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+COMO OBTER AJUDA
+
+--------
+OBJETIVO
+--------
+
+O programa desenvolvido é parte integrante do trabalho 2 da matéria INF1301 - Programação Modular.
+O objetivo dos trabalho é implementar e testar um conjunto de construtos que administram um jogo de Gamão.
+São implementadas funções de criação de tabuleiro, peça, movimentação, e pontos entre outras.
+
+No executável "TRAB2-1.exe" presente no arquivo compactado do trabalho, é implementado um teste de criação de tabuleiros de gamão.
+Ao receber o comando criartab, um inteiro da condição esperada, e um inteiro da posição alocada, é criado um tabuleiro na posição do array desejada.
+Ao receber o comando destruirtab, e um inteiro da posição do tabuleiro, o tabueleiro é destruído.
+Ao receber o comando moverpeca, um inteiro da condição esperada, um inteiro referente à qual tabuleiro, um inteiro da posição que se deseja mover a peça,
+e um inteiro de quantas casas ela vai andar, a peça é movida.
+
+No executável "TRAB2-2.exe" presente no arquivo compactado do trabalho, é implementado um teste de criação de peças do gamão.
+Ao receber o comando criarpeca, um inteiro da condição esperada, um inteiro de qual tabuleiro deseja criar a peça, e um char cor da peça, é criado uma peça.
+Ao receber o comando obtercor, um inteiro da condição esperada, um inteiro referente à qual tabuleiro, e um char referente a cor esperada, é obtida  cor da peça se exister a peça.
+Ao receber o comando destruirpeca, um inteiro da condição esperada, e um inteiro referente à qual tabuleiro, a peça é destruida.
+
+No executável "TRAB2-3.exe" presente no arquivo compactado do trabalho, é implementado um teste de pontuação da partida.
+Ao receber o comando criarponto, e um inteiro da condição esperada, é criado uma estrutura de pontuação da partida.
+Ao receber o comando obterponto, um inteiro da condição esperada, e um inteiro do valor esperado, é obtido o valor da pontuação.
+Ao receber o comando destruirpontuacao, é destruida a estrutura de pontuação.
+Ao receber o comando dobrarponto, um inteiro referente a um dos jogadores, e um inteiro da condição esperada, o valor da pontuação é dobrada.
+
+No executável "TRAB2-4.exe" presente no arquivo compactado do trabalho, é implementado um teste do dado do jogo.
+Ao receber o comando jogadado, e um inteiro da condição esperada, é retornado um valor de 1 a 6 aleatóriamente.
+
+
+----------
+INSTALAÇÃO
+----------
+Crie um diretório no qual você deseja instalar a aplicação. Descompacte o arquivo neste diretório de sua escolha, 
+assegurando que sejam gerados os sub-diretórios contidos neste arquivo, descritos logo em seguida.
+
+-----------------------
+ESTRUTURA DE DIRETÓRIOS
+-----------------------
+
+Ao descompactar são criados os seguintes diretórios:
+
+-INF1301-TRAB02-AFAMPA: Pasta Raiz
+
+-BATCHES: Contém os arquivos .bat para execução dos testes dos módulos.
+
+-DOCUMENTAÇÃO: Contém os arquivos de Modelo, exemplo, especificações e Arquitetura do programa e os relatórios dos integrantes do grupo.
+
+-FONTES: Este diretório contém os arquivos fonte para compilação independente dos módulos do trabalho.
+
+-PRODUTO: Contém os arquivos excutáveis gerados. 
+
+-SCRIPTS: Contém os scripts de testes dos módulos.
+
+-----------------
+MODO DE EXECUÇÃO
+-----------------
+Para testar o programa, primeiramente deve-se renomear os arquivos da basta Batches e remover a extensão .txt
+Em seguida deve-se executar o bat do teste desejado. 
+Para que o batch reconheça o script, ele deve encontrar-se na pasta Scripts.
+Para que o batch reconheça o arquivo exe, ele deve encontrar-se na pasta Produtos.
+Os arquivos script estão descritos abaixo.
+
+------------------------------------------
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+------------------------------------------
+
+- TesteTabuleiro.script: Testa os modulos relacionados ao tabuleiro.
+
+- TestePeca.script: Testa os modulos relacionados à criação e destruição de peça.
+
+- TesteDadoPontos.script: Testa os modulos relacionados à pontuação da partida.
+
+- TesteDado.script: Testa os modulos relacionados ao dado.
+
+-----------------------------------------------------
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+-----------------------------------------------------
+Legenda:
+=nome do comando <tipo de dado a ser recebido> descricao do dado
+Descrição do caso de teste
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo baralho completo com o programa "TRAB2-1.exe", 
+o construto de teste de tabuleiro completo.
+Comandos disponíveis e respectiva descrição:
+
+	=criartab <int> Condicao de retorno esperada <int> Index do array
+	Cria um tabuleiro completo de gamão. Testa a função TAB_CriarTabuleiro.
+
+	=destruirtab <int> Index do array
+	Destroi um tabuleiro. Testa a função TAB_DestruirTabuleiro.
+
+	=moverpeca <int> Condicao de retorno esperada <int> Index do array <int> Posição da peça a ser movida <int> Quantidade de casas a peça vai se mover 
+	Move uma peça desejada para outra casa do tabuleiro. Testa a função TAB_MoverPeca.
+	
+	Obs1. Os valores numéricos esperados/obtidos das condições de retorno estão descritos abaixo.
+
+	==> Valores numéricos das condições de retorno 
+	* TAB_CondRetOK
+	Concluiu corretamente
+
+        * TAB_CondRetListaVazia
+	A lista não contém elementos
+
+        * TAB_CondRetFimLista
+	Foi atingido o fim de lista
+
+        * TAB_CondRetFaltouMemoria
+	Faltou memória ao tentar criar um elemento de lista
+
+	* TAB_CondRetNaoTemPeca
+	Tentando mover uma peca que não existe
+
+	* TAB_CondRetLPecasAdversarias
+	Possui 2 ou mais pecas adversarias para a posicao que se deseja mover a peca
+
+	* TAB_CondRetMesmaCasa
+	Tentando mover para mesma casa
+
+	* TAB_CondRetForaTabuleiro
+	Tentando mover para fora do tabuleiro
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo de administracao dos montes com o programa "TRAB2-2.exe", 
+o construto de teste do modulo PECA.
+Comandos disponíveis e respectiva descrição:
+
+	=criarpeca <int> Condição de retorno esperada <int> Index do array <char> Cor da peça
+	Cria uma peça com a cor desejada. Testa a função PECA_CriarPeca.
+
+	=obtercor <int> Condição de retorno esperada <int> Index do array <char> Cor da peça
+	Obtem a cor esperada da peça. Testa a função PECA_ObterCor.
+
+	=destruirpeca <int> Condição de retorno esperada <int> Index do array
+	Destroi a peça selecionada. Testa a função PECA_DestruirPeca.
+	
+	Obs2. Os valores numéricos esperados/obtidos das condições de retorno estão descritos abaixo.
+
+	==> Valores numéricos das condições de retorno 
+	* PECA_CondRetOK = 0
+        Concluiu corretamente
+
+        * PECA_CondRetPecaVazia = 1
+        Nao existe a peça
+
+        * PECA_CondRetFaltouMemoria = 2
+	Faltou memória ao tentar criar um elemento de lista
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo de administracao das dez sequencia com o programa "TRAB2-3.exe", 
+o construto de teste do modulo DADOPONTOS.
+Comandos disponíveis e respectiva descrição:
+
+	=criarponto <int> Condição de retorno esperada 
+	Cria uma estrutura de pontuação da partida. Testa a função DP_Cria.
+
+	=obterponto <int> Condição de retorno esperada  <int> Ponto esperado
+	Obtem pontuação esperada da partida. Testa a função DP_ObterPonto.
+
+	=destruirpontuacao
+	Destroi a estrutura de pontuação. Testa a função DP_DestruirPonto.
+	
+	=dobrarponto <int> Jogador que deseja dobrar os pontos <int> Condição de retorno esperada
+	Testa se o jogador pode dobrar os pontos da partida e dobra os pontos. Testa a função DP_Dobra.
+
+	Obs3. Os valores numéricos esperados/obtidos das condições de retorno estão descritos abaixo.
+
+	==> Valores numéricos das condições de retorno 
+	* DP_CondRetOK = 0
+        Concluiu corretamente
+
+	* DP_CondRetNExisteDP = 1
+	Não existe a estrutura
+
+	* DP_CondRetJogadorErrado = 2
+	Jogador não pode dobrar
+		 
+	* DP_CondRetJaExisteDP = 3
+	Estrutura já existe
+
+	* DP_CondRetFaltouMemoria = 4
+	Falta memória
+
+	* DP_CondRetPlayerErrado = 5
+	Valor do parametro fora do intervalo de [1,2]
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo de administracao das dez sequencia com o programa "TRAB2-4.exe", 
+o construto de teste do modulo DADO.
+Comandos disponíveis e respectiva descrição:
+
+	=jogadado <int> Condição de retorno esperada 
+	Joga um dado de 6 lados e retorna um valor do dado jogado. Testa a função DADO_GeraValor.
+
+	Obs4. Os valores numéricos esperados/obtidos das condições de retorno estão descritos abaixo.
+
+	==> Valores numéricos das condições de retorno 
+	* DADO_CondRetOK = 0
+	Concluiu corretamente.
+
+-----------------
+COMO OBTER AJUDA
+-----------------
+
+Se tiver qualquer problema com este produto, entre em contato por meio dos 
+emails: alessandrofaletti@gmail.com, maa4447@gmail.com, pedrobruno81@yahoo.com.br

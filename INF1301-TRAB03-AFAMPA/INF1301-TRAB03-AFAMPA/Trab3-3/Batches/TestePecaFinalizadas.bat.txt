@@ -1,0 +1,7 @@
+@echo off
+
+
+IF EXIST ..\produto\TRAB3-3.exe.txt	ren ..\produto\TRAB3-3.exe.txt TRAB3-3.exe
+
+..\Produto\TRAB3-3  /s..\Scripts\TestePecaFinalizadas.script   /l..\produto\LogTestePecaFinalizadas.log
+pause

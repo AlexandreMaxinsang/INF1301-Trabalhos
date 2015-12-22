@@ -1,0 +1,7 @@
+@echo off
+
+
+IF EXIST ..\produto\Trab2-1.exe.txt	ren ..\produto\Trab2-1.exe.txt Trab2-1.exe
+
+..\Produto\Trab2-1  /s..\Scripts\TesteTabuleiro.script   /l..\produto\LogTabuleiro.log
+pause

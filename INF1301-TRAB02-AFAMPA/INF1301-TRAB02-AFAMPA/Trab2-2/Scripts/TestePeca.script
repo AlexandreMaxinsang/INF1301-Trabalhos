@@ -1,0 +1,33 @@
+// Script:    TestePeca.script
+// Autor:     Alessandro Faletti,Alexandre Maxinsang,Pedro Augusto
+// Data:      24/set/2015
+// Propósito: Ilustrar arquivo de script, 
+//            Testa a construção de uma peça usando parâmetros literais
+//            Não verifica se as operações modificaram corretamente as referências
+//            Este script é completo!!!
+//
+
+==Criar a peça no index=0(CondRetEsperada,index ,CorEspera )
+=criarpeca 0 0 'p'
+
+==Obter a cor de uma Peça em uma Peça existente
+=obtercor 0 0 'p'
+
+==Destruir a Peça
+=destruirpeca 0 0
+
+==Criar a peça no index=1(CondRetEsperada,index ,CorEspera )
+=criarpeca 0 1 'b'
+
+==Obter a cor de uma Peça em uma Peça não existente
+=obtercor  1 2 ' '
+=obtercor  1 5 ' '
+
+==DesTruir a Peça
+=destruirpeca 0 1
+
+
+
+
+
+// fim

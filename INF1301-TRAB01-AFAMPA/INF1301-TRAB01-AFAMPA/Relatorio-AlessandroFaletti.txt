@@ -1,0 +1,14 @@
+Data		   Horas Trabalhadas	        Tipo Tarefa		  Descrição da Tarefa Realizada
+16/08/2015		2h			Estudar			  Estudo do documentação do arcabouço e discussão do enunciado do trabalho com o grupo. Instalação do arcabouco de testes
+
+18/08/2015		1h			Especificar os módulos    Complementação da documentação antiga dos módulos de implementação e definição. 
+
+23/08/2015		5h			Codificar Módulo 	  Inicio da implementação das funçoes do módulo matriz
+
+28/08/2015		4h			Revisar codigo do módulo  Revisão dos codigos das funcoes do teste matriz
+
+29/08/2015		5h			Diagnosticar e Corrigir	  Alteração de detalhes da implementação dos módulos MATRIZ.C e TESTMAT.c pois estes
+						os Problemas Encontrados  não correspondiam ao enunciado do trabalho. Alteração na documentação devido as alterações 
+								  	  na implementação. Elaboração de script de teste para testar módulo MATRIZ com as novas alterações.
+					
+					

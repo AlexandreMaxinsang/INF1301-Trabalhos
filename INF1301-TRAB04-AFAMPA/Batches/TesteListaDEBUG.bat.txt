@@ -1,0 +1,7 @@
+@echo off
+
+
+IF EXIST ..\produto\TRAB4-1.exe.txt	ren ..\produto\TRAB4-1.exe.txt TRAB4-1.exe
+
+..\Produto\TRAB4-1  /s..\Scripts\Lista.script   /l..\produto\LogDEBUG.log
+pause

@@ -1,0 +1,44 @@
+// Script:    TestePecaFinalizada.script
+// Autores:   Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+// Data:      16/out/2015
+// Propósito: Ilustrar arquivo de script, 
+//            Testa a construção de uma lista duplamente encadeada de peça finalizadas do gamão,
+//	      a inserção de uma peça na lista e o esvaziamento da lista e o retorno da quantidade de elementos da lista
+//            Não verifica se as operações modificaram corretamente as referências
+//            Este script é completo!!!
+//
+
+
+
+==Criar lista de peças finalizadas
+=criarpecafin 0 0
+=destruirpecafin 0 0
+
+==Inserir uma peça em uma lista 
+=criarpecafin 0 1
+=inserirpecafin 0 1 'b'
+=destruirpecafin 0 1
+
+==Verificar a Quantidade elementos da lista
+=criarpecafin 0 1
+=inserirpecafin 0 1 'b'
+=inserirpecafin 0 1 'b'
+=inserirpecafin 0 1 'b'
+=quantidadepecafin 0 1 3
+=destruirpecafin 0 1
+
+==Esvaziar uma lista 
+=criarpecafin 0 2
+=esvaziarpecafin 0 2
+=destruirpecafin 0 2
+
+==A quantiadade de elementos de uma lista
+=criarpecafin 0 1
+=inserirpecafin 0 1 'b'
+=inserirpecafin 0 1 'b'
+=inserirpecafin 0 1 'b'
+=quantidadepecafin 0 1 3
+=destruirpecafin 0 1
+
+
+// fim

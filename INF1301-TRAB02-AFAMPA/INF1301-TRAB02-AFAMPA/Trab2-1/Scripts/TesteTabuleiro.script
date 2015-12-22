@@ -1,0 +1,42 @@
+// Script:    TesteTabuleiro.script
+// Autores:   Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+// Data:      24/set/2015
+// Propósito: Ilustrar arquivo de script, 
+//            Testa a construção de um tabuleiro de gamão e movimentacao da pecas usando parâmetros literais
+//            Não verifica se as operações modificaram corretamente as referências
+//            Este script é completo!!!
+//
+
+
+
+==Cria tabuleiro
+=criartab 0 0
+=destruirtab 0
+=criartab 0 1
+=destruirtab 1
+
+==Teste de movimentacao de peca
+=criartab 0 0
+=moverpeca 0 0 1 1
+=moverpeca 0 0 1 1
+
+==Tentativa de movimentacao de peca inexistente na casa
+=moverpeca 4 0 1 1
+
+==Mover peca para casa com mais pecas adversarias
+=moverpeca 5 0 2 4
+
+==Mover peca para fora do tabuleiro
+=moverpeca 7 0 2 23
+
+==Tentativa de mover peca em casa inexistente
+=moverpeca 7 0 25 3
+
+==Tentativa de mover peca para a mesma posicao
+=moverpeca 6 0 2 0
+
+==Destruir Tabuleiro
+=destruirtab 0
+
+
+// fim

@@ -1,0 +1,57 @@
+// Script:    TesteDadoPontos.script
+// Autor:     Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+// Data:      26/set/2015
+// Propósito: Ilustrar arquivo de script, 
+//            Testa a construção de uma pontuacao usando parâmetros literais
+//            Não verifica se as operações modificaram corretamente as referências
+//            Este script é completo!!!
+//
+
+
+==Tenta obter ponto de uma estrutura inexistente
+=obterponto 1  1
+
+==Cria pontos e tenta criar porém já existe uma estrutura criada
+=criarponto 0
+=criarponto 3
+=obterponto 0 1
+
+==Destroi estrutura de pontuacao
+=destruirpontuacao
+
+==Tenta obter pontuacao, mas a pontuacao foi destruida
+=obterponto 1 4
+
+==Cria e faz a primeira dobra de pontos
+=criarponto 0
+=obterponto 0 1
+=dobrarponto 1 0
+
+==Testa se o jogador 1 pode dobrar novamente
+=dobrarponto 1 2
+
+==Jogador 2 dobra e testa se ele pode dobrar novamente
+=dobrarponto 2 0
+=dobrarponto 2 2
+
+==Testa um jogar fora do intervalo
+=dobrarponto 4 5
+
+==Obtem valor da pontuacao
+=obterponto 0 4
+
+==Espera um valor de ponto sendo outro
+=obterponto 0 1
+
+==Destroi estrutura de pontuacao
+=destruirpontuacao
+
+==Cria e faz a primeira dobra de pontos
+=criarponto 0
+=obterponto 0 1
+=dobrarponto 2 0
+
+==Testa se o jogador 2 pode dobrar novamente
+=dobrarponto 2 2
+
+// fim

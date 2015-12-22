@@ -1,0 +1,15 @@
+Data		Horas Trabalhadas		Tipo Tarefa			                             Descrição da Tarefa Realizada
+
+16/08/2015		 1h		          Estudar	                                  Leitura da proposta do 1º trabalho e estudo do conteudo. 
+									                          Obtenção e Instalação do arcabouço de testes
+
+17/08/2015		 2h		          Estudar		   	                   Realizar testes de erros forçados e recuperados
+
+21/08/2015		 1h 			  Estudar		                   Leitura do livro texto da materia e revisão dos codigos do arcabouço 
+
+23/08/2015		 4h		      Codificar Módulo		                           Inicio da implementação das funções do modulo matriz
+
+29/08/2015		 3h	           Revisar Código do Módulo                        Realização de diversos testes e correção do codigo nas funções indicadas
+
+30/08/2015		 2h        Diagnosticar e Corrigir os Problemas Encontrados       Comparar os criterios de correção com o trabalho e conferir a documentação
+

@@ -1,0 +1,86 @@
+// Script:    TesteBasico.script
+// Autor:     Alessandro Faletti, Alezandre Maxinsang, Pedro Augusto
+// Data:      30/08/2015
+// Propósito: Ilustrar arquivo de script, 
+//            Testa a construção de uma matriz usando parâmetros literais
+//            Verifica se as operações modificaram corretamente as referências
+//Este script é completo
+
+
+==Verificar que nao criou a matriz 
+=criar      0 6 8 0
+=ir         0 2 2 0
+=criar      0 3 3 1
+=destruir   0
+
+==Verificar que a matriz nao existe
+=ir  1 2 2 2
+
+==Verificar que nó nao existe
+=criar      1 4 4 0
+=ir  		 1 2 5 5
+=destruir   1
+
+==Verificar que ja existe a lista
+=criar      	2 2 2 0
+
+=ir 			2 1 1 0
+=criarlista 	0
+=inselemapos  	'f' 0
+=inselemapos 	'l' 0
+=inselemapos 	'a' 0
+=inserirlista 	 2  0
+
+=criarlista 	 0
+=inselemapos 	'v' 0
+=inselemapos 	'i' 0
+=inselemapos 	'0' 0
+=inserirlista 	 2  6
+
+=ir 			2 1 2 0
+=criarlista 	 0
+=inselemapos 	'v' 0
+=inselemapos 	'i' 0
+=inselemapos 	'0' 0
+=inserirlista 	 2  0
+
+=ir 			2 2 1 0
+=criarlista 	 0
+=inselemapos 	'e' 0
+=inserirlista 	 2  0
+
+=ir 			 2 2 2 0
+=criarlista 	 0
+=inselemapos 	' ' 0
+=inselemapos 	'l' 0
+=inselemapos 	'i' 0
+=inselemapos 	't' 0
+=inselemapos 	't' 0
+=inselemapos 	'l' 0
+=inselemapos 	'e' 0
+=iriniciolista 
+=inselemantes 	'n' 0
+=inselemantes 	'e' 0
+=inselemantes 	'k' 0
+=inselemantes 	'c' 0
+=inselemantes 	'i' 0
+=inselemantes	'h' 0
+=inselemantes 	'c' 0
+
+=obterlista     'c' 1
+=avancarlista    2  0
+=obterlista     'i' 1  
+=irfinallista   
+=obterlista     'e' 1
+
+=inserirlista 	 2  0
+=destruir 2
+
+==Verificar que ja existe a lista
+=criar      	3 8 8 0
+=inserirlista 	3 7
+=destruir 3
+
+
+
+// fim

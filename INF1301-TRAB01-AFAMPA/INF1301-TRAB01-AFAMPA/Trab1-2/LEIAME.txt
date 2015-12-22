@@ -1,0 +1,152 @@
+------------------------------------------------------------------------------------------------
+  Arquivo LEIAME do Grupo AFAMPA - Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+------------------------------------------------------------------------------------------------
+
+Este documento fornece informações de utilização para o programa de teste do módulo Matriz.
+
+--------
+SUMÁRIO
+--------
+
+OBJETIVO
+INSTALAÇÃO
+ESTRUTURA DE DIRETÓRIOS
+MODO DE EXECUÇÃO
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+COMO OBTER AJUDA
+
+--------
+OBJETIVO
+--------
+
+O programa desenvolvido é parte integrante do trabalho 1 da matéria INF1301 - Programação Modular.
+O objetivo dos construtos aqui referenciados é implementar e testar um conjunto de funções que manipulam uma matriz de listas.
+
+No executável "TRAB1-2.exe" presente no arquivo compactado do trabalho, é apresentado o construto de teste da matriz de listas.
+Este realiza operações  básicas (como criar, destruir, inserir elemento, andar pela matriz e etc). Neste programa há um módulo de teste 
+específico que estabelece uma interface com o módulo a testar. Com a finalidade de automatizar os testes, estes são 
+realizados através de arquivos de diretivas  de teste (script) e os módulos operam juntamente com um Arcabouço de Teste. 
+O Arcabouço, por sua vez, coordena a realização desses testes dentro  do programa, interpretando esse arquivo 
+de diretivas de teste.
+
+
+----------
+INSTALAÇÃO
+----------
+Crie um diretório no qual você deseja instalar a aplicação. Descompacte o arquivo neste diretório de sua escolha, 
+assegurando que sejam gerados os sub-diretórios contidos neste arquivo, descritos logo em seguida.
+
+-----------------------
+ESTRUTURA DE DIRETÓRIOS
+-----------------------
+
+Ao descompactar são criados os seguintes diretórios:
+
+-INF1301-TRAB01-AFAMPA: Pasta Raiz
+
+-BATCHES: Contém os arquivos .bat para execução dos testes dos módulos.
+
+-FONTES: Este diretório contém os arquivos fonte para compilação independente dos módulos Matriz e TESTMAT.
+
+-PRODUTO: Contém os arquivos excutáveis gerados. 
+
+-SCRIPTS: Contém os scripts de testes dos módulos.
+
+-----------------
+MODO DE EXECUÇÃO
+-----------------
+Para testar o programa, deve-se ir na pasta Batches, renomear o arquivo Instalar.bat.txt para Instalar.bat, e executar o arquivo. 
+Será requisitado um arquivo script para utilizar no teste.
+A sintaxe do arquivo pode ser com ou sem extensão (ex. TesteMatriz.script ou apenas TesteMatriz). 
+Para que o batch reconheça o arquivo, ele deve encontrar-se na pasta Scripts.
+Os arquivos script estão descritos abaixo.
+
+------------------------------------------
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+------------------------------------------
+
+- TesteMatriz1.script: Versão 1 do script TesteMatriz.script. Arquivo que testa o módulo Matriz.
+
+-----------------------------------------------------
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+-----------------------------------------------------
+Legenda:
+=nome do comando <tipo de dado a ser recebido> descricao do dado
+Descrição do caso de teste
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo Árvore com o programa "TRAB1-2.exe", 
+o construto de teste da matriz.
+Comandos disponpíveis e respectiva descrição:
+
+	=criar 	<int> Indice da matriz(de 0 à 9)
+		<int> Linha (Quantas linhas da matriz)
+		<int> Coluna (Quantas colunas da matriz)
+		<int> Condição de retorno esperada 
+	Cria uma matriz. Testa a função de acesso MAT_CriarMatriz.
+
+	=destruir <int> Indice da matrz a ser destruida
+	Destroi uma matriz. Testa a função de acesso MAT_DestruirMatriz.
+
+	=ir 	<int> Indice da matriz
+		<int> Linha (qual linha da matriz)
+		<int> Coluna (qual coluna da matriz)
+		<int> Condição de retorno esperada 
+	Insere um nó a esquerda. Testa a função de acesso MAT_IrPara.
+
+	=criarlista	<int> Condição de retorno esperada 
+	Cria uma lista. Testa a função de acesso LIS_CriarLista.
+
+	=inselemantes 	<char> valor a ser inserido na lista
+			<int> Condição de retorno esperada
+	Insere um elemento antes do corrente da lista. Testa a função de acesso LIS_InserirElementoAntes.
+
+	=inselemapos 	<char> valor a ser inserido na lista
+			<int> Condição de retorno esperada
+	Insere um elemento apos do corrente da lista. Testa a função de acesso LIS_InserirElementoApos.
+
+	=inserirlista 	<int> indice da matriz (qual matriz deseja inserir a lista) 
+			<int> Condição de retorno esperada 
+	Insere a lista no nó apontado pelo corrente da matriz escolhida. Testa a função de acesso MAT_InserirLista.
+
+	=obter 	<int> Indice da matriz
+		<char> valor obtido esperado
+		<int> Condição de retorno esperada
+	Obtem valor do nó corrente. Testa a função de acesso LIS_ObterValor.
+
+	
+	Obs. Os valores numéricos esperados/obtidos das condições de retorno estão descritos logo abaixo.
+
+	==> Valores numéricos das condições de retorno esperadas
+
+	* MAT_CondRetOK = 0
+	Executou corretamente
+	
+	* MAT_CondRetNaoCriouMatriz = 1
+	Não criou Matriz
+
+        * MAT_CondRetMatrizNaoExiste = 2
+	Matriz não existe
+
+        * MAT_CondRetMatrizVazia = 3
+	Matriz está vazia
+
+        * MAT_CondRetFaltouMemoria = 4
+	Faltou memória ao alocar dados
+
+        * MAT_CondRetNoInexiste = 5
+	Nó da matriz não existe
+
+	* MAT_CondRetJaExisteLista = 6
+	Lista já existe
+
+	* MAT_CondRetNaoExisteLista =7
+	Nao existe Lista
+
+
+-----------------
+COMO OBTER AJUDA
+-----------------
+
+Se tiver qualquer problema com este produto, entre em contato por meio dos 
+emails: alessandrofaletti@gmail.com, maa4447@gmail.com, pedrobruno81@yahoo.com.br

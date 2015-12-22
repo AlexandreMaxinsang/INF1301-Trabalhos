@@ -1,0 +1,16 @@
+// Script:    TesteDado.script
+// Autor:     Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+// Data:      26/set/2015
+// Propósito: Ilustrar arquivo de script, 
+//            Testa o modulo de Dado usando parâmetros literais
+//            Não verifica se as operações modificaram corretamente as referências
+//            Este script é completo!!!
+//
+
+==Gera valor
+=jogadado 0
+
+
+
+
+// fim

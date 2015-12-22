@@ -1,0 +1,149 @@
+------------------------------------------------------------------------------------------------
+  Arquivo LEIAME do Grupo AFAMPA - Alessandro Faletti, Alexandre Maxinsang, Pedro Augusto
+------------------------------------------------------------------------------------------------
+
+Este documento fornece informações de utilização para os programas de implementação do jogo Gamão
+
+--------
+SUMÁRIO
+--------
+
+OBJETIVO
+INSTALAÇÃO
+ESTRUTURA DE DIRETÓRIOS
+MODO DE EXECUÇÃO
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+COMO OBTER AJUDA
+
+--------
+OBJETIVO
+--------
+
+O programa desenvolvido é parte integrante do trabalho 3 da matéria INF1301 - Programação Modular.
+O objetivo dos trabalho é implementar e testar um conjunto de construtos que administram um jogo de Gamão.
+São implementadas funções de peças finalizadas, peças capturadas e a aplicação completa do Gamão.
+
+No executável "TRAB3-1.exe" presente no arquivo compactado do trabalho, é implementada de forma completa a aplicação do Jogo Gamão.
+
+No executável "TRAB3-2.exe" presente no arquivo compactado do trabalho, é implementado um teste do módulo PeçaFinalizada.
+
+No executável "TRAB3-3.exe" presente no arquivo compactado do trabalho, é implementada um teste do módulo PeçaCapturada.
+
+----------
+INSTALAÇÃO
+----------
+Crie um diretório no qual você deseja instalar a aplicação. Descompacte o arquivo neste diretório de sua escolha, 
+assegurando que sejam gerados os sub-diretórios contidos neste arquivo, descritos logo em seguida.
+
+-----------------------
+ESTRUTURA DE DIRETÓRIOS
+-----------------------
+
+Ao descompactar são criados os seguintes diretórios:
+
+-INF1301-TRAB03-AFAMPA: Pasta Raiz
+
+-BATCHES: Contém os arquivos .bat para execução dos testes dos módulos.
+
+-DOCUMENTAÇÃO: Contém os arquivos de Modelo, exemplo, especificações e Arquitetura do programa e os relatórios dos integrantes do grupo.
+
+-FONTES: Este diretório contém os arquivos fonte para compilação independente dos módulos do trabalho.
+
+-PRODUTO: Contém os arquivos excutáveis gerados. 
+
+-SCRIPTS: Contém os scripts de testes dos módulos.
+
+-----------------
+MODO DE EXECUÇÃO
+-----------------
+Para testar o programa, primeiramente deve-se renomear os arquivos da basta Batches e remover a extensão .txt
+Em seguida deve-se executar o bat do teste desejado. 
+Para que o batch reconheça o script, ele deve encontrar-se na pasta Scripts.
+Para que o batch reconheça o arquivo exe, ele deve encontrar-se na pasta Produtos.
+Os arquivos script estão descritos abaixo.
+
+------------------------------------------
+DESCRIÇÃO DAS DIRETIVAS DE TESTE (SCRIPTS)
+------------------------------------------
+
+- TestePecaCapturada.script: Testa os modulos relacionados as peças capturadas pelo jogador.
+
+- TestePecaFinalizadas.script: Testa os modulos relacionados as peças finalizadas pelo jogador.
+
+-----------------------------------------------------
+COMANDOS DOS ARQUIVOS DE DIRETIVAS DE TESTES (SCRIPT)
+-----------------------------------------------------
+Legenda:
+=nome do comando <tipo de dado a ser recebido> descricao do dado
+Descrição do caso de teste
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo baralho completo com o programa "TRAB3-2.exe", 
+o construto de teste do modulo PECACAPTURADA.
+Comandos disponíveis e respectiva descrição:
+
+
+	=criarpecacap <int> Condicao de retorno esperada <int> Index do array
+	Cria uma estrutura de peças capturadas. Testa a função PECACAPTURADA_CriarPecaCapturada.
+
+	=destruirpecacap <int> Condicao de retorno esperada <int> Index do array
+	Destroi uma estrutura de peças capturadas. Testa a função PECACAPTURADA_DestruirPeca.
+
+	=inserirpecacap <int> Condicao de retorno esperada <int> Index do array <char> Cor da peça 
+	Insere uma peça na estrutura. Testa a função PECACAPTURADA_InserirPecaCapturada.
+
+	=qtdpecacap <int> Condicao de retorno esperada <int> Index do array <int> Quantidade esperada 
+	Retorna a quantidade de peça da estrutura. Testa a função PECACAPTURADA_QuantidadePecaCapturada.
+
+	=retirarpecacap <int> Condicao de retorno esperada <int> Index do array
+	Retira uma peça da estrutura. Testa a função PECACAPTURADA_RetirarPecaCapturada.
+	
+	Obs1. Os valores numéricos esperados/obtidos das condições de retorno estão descritos abaixo.
+
+	==> Valores numéricos das condições de retorno 
+	* PECACAPTURADA_CondRetOK = 0
+	Concluiu corretamente
+
+        * PECACAPTURADA_CondRetPecaVazia = 1
+	A peça esta vazia
+
+        * PECACAPTURADA_CondRetFaltouMemoria = 2
+	Faltou memória ao tentar criar um elemento de lista
+
+
+======> Comandos do arquivo de diretivas de teste para testar o módulo de administracao dos montes com o programa "TRAB3-3.exe", 
+o construto de teste do modulo PECAFINALIZADAS.
+Comandos disponíveis e respectiva descrição:
+
+
+	=criarpecafin <int> Condição de retorno esperada <int> Index do array
+	Cria uma estrutura de peças finalizadas. Testa a função PECAFINALIZADA_CriarPecaFinalizada.
+
+	=destruirpecafin <int> Condição de retorno esperada <int> Index do array
+	Destroi uma estrutura de peças finalizadas. Testa a função PECAFINALIZADA_DestruirPeca.
+
+	=inserirpecafin <int> Condição de retorno esperada <int> Index do array <char> Cor da peça
+	Insere uma peça na estrutura. Testa a função PECAFINALIZADA_InserirPecaFinalizada.
+
+	=esvaziarpecafin <int> Condição de retorno esperada <int> Index do array
+	Esvazia a estrutura de peças finalizadas. Testa a função PECAFINALIZADA_EsvaziarPecaFinalizada.
+
+	=quantidadepecafin <int> Condição de retorno esperada <int> Index do array <int> Quantidade esperada
+	Retorna a quantidade de peça da estrutura. Testa a função PECAFINALIZADA_QuantidadePecaFinalizada.
+	
+	Obs2. Os valores numéricos esperados/obtidos das condições de retorno estão descritos abaixo.
+
+	==> Valores numéricos das condições de retorno 
+	* PECAFINALIZADA_CondRetOK = 0
+        Concluiu corretamente
+
+        * PECAFINALIZADA_CondRetFaltouMemoria = 1
+        Faltou memória ao tentar criar um elemento de lista
+
+
+-----------------
+COMO OBTER AJUDA
+-----------------
+
+Se tiver qualquer problema com este produto, entre em contato por meio dos 
+emails: alessandrofaletti@gmail.com, maa4447@gmail.com, pedrobruno81@yahoo.com.br

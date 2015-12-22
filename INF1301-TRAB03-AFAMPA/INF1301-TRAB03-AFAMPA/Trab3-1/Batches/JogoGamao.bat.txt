@@ -1,0 +1,6 @@
+@echo off
+
+
+IF EXIST ..\produto\TRAB3-1.exe.txt	ren ..\produto\TRAB3-1.exe.txt TRAB3-1.exe
+
+..\Produto\TRAB3-1

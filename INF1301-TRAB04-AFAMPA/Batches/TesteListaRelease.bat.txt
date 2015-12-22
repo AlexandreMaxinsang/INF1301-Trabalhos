@@ -1,0 +1,7 @@
+@echo off
+
+
+IF EXIST ..\produto\TRAB4-2.exe.txt	ren ..\produto\TRAB4-2.exe.txt TRAB4-2.exe
+
+..\Produto\TRAB4-2  /s..\Scripts\TesteLista.script   /l..\produto\LogRelease.log
+pause

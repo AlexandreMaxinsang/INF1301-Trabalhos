@@ -1,0 +1,13 @@
+Data		  Horas Trabalhadas 	      Tipo Tarefa			Descrição da Tarefa Realizada
+
+20/11/2015		1h		Estudar			  	Estudar e projetar a arquitetura da aplicação
+21/11/2015		3h		Especificar os módulos		Definir as funções necessárias para o módulo
+22/11/2015		2h30		Especificar funções		Estruturar as funções de cada módulo
+23/11/2015		2h		Especificar funções		Estudo inicial da especificação de requisitos 
+24/11/2015		2h30		Projetar			Projetar o funcionamento da interface da aplicação
+25/11/2015		3h		Codificar Módulo		Codificar módulo do programa e revisar toda a especificação de requisitos
+25/11/2015		5h		Codificar Módulo		Codificar módulo do prorama e finalizar o modelo estrutural e exemplo físico
+25/11/2015		3h		Codificar Módulo		Codificar módulo do prorama
+27/11/2015		1h		Especificar funções		Início da redação da documentação das funções
+28/11/2015		1h30		Especificar funções		Redação da  documentação das funções
+28/11/2015		3h		Revisar projetos		Revisar toda a documentação, relatórios e arquivos de entrega do trabalho
